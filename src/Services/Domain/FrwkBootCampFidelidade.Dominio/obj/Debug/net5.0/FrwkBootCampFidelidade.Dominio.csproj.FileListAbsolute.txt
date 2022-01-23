@@ -1,0 +1,15 @@
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/bin/Debug/net5.0/FrwkBootCampFidelidade.Dominio.deps.json
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/bin/Debug/net5.0/FrwkBootCampFidelidade.Dominio.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/bin/Debug/net5.0/ref/FrwkBootCampFidelidade.Dominio.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/bin/Debug/net5.0/FrwkBootCampFidelidade.Dominio.pdb
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/bin/Debug/net5.0/FrwkBootCampFidelidade.DTO.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/bin/Debug/net5.0/FrwkBootCampFidelidade.DTO.pdb
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.csproj.AssemblyReference.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.AssemblyInfoInputs.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.AssemblyInfo.cs
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.csproj.CoreCompileInputs.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.csproj.CopyComplete
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/ref/FrwkBootCampFidelidade.Dominio.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/Debug/net5.0/FrwkBootCampFidelidade.Dominio.pdb

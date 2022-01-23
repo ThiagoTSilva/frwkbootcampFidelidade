@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wMag0ooPvwoiwhrqC4sK5mA6OHL205vInZuDLUg7NP0cgeMeRBIsOfEO+FNHJew3Jqj8MxmVrftnWb2hNUQzUw==",
+  "success": true,
+  "projectFilePath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj",
+  "expectedPackageFiles": [
+    "/Users/thiago/.nuget/packages/fluentvalidation/10.3.6/fluentvalidation.10.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,224 @@
+version: '3.8'
+
+services:
+    mssql: 
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        environment:
+            - SA_PASSWORD=Suporte59@.!
+            - ACCEPT_EULA=Y
+        ports:
+            - "1433:1433"
+        volumes:
+            - .mssql/:/var/opt/mssql/data   
+        container_name: 
+            mssql
+        expose:
+          - 1433
+
+    rabbitmq:
+        image: rabbitmq:3.8-management-alpine
+        container_name: rabbitmq
+        environment:
+            - RABBITMQ_DEFAULT_USER=guest
+            - RABBITMQ_DEFAULT_PASS=guest
+        ports:
+            - '5672:5672'
+            - '15672:15672'
+        expose:
+          - 15672
+
+    mongodb:        
+        image : mongo
+        container_name: mongodb
+        environment:
+            - PUID=1000
+            - PGID=1000
+        volumes:
+            - .mongodb:/data/db
+        ports:
+            - 27017:27017
+        restart: unless-stopped
+        mem_limit: 
+            512m
+        expose:
+          - 27017
+        
+    
+    apigateway:
+        image: fernando2022/apigateway.api        
+        environment:
+            - SecretKey=1130f66f-591f-4f1c-a748-f1f9a1c7c43a
+            - Database=DBFidelidade
+            - DbUser=SA
+            - Password=Suporte59@.!
+            - Datasource=host.docker.internal, 1433
+            - MongoDbDatabase=promotionsdb
+            - MongoDbDatasource=mongodb://host.docker.internal:27017
+        ports:
+            - 7000:80
+        networks: 
+            - net
+        depends_on:
+            - rabbitmq
+            - kafka
+        build:
+            context: .
+            dockerfile: Web.BootCampFidelidade.HttpAggregator\Dockerfile
+
+    wallet.api:
+        image: fernando2022/wallet.api  
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - DOCKER_ENVIRONMENT=true
+          - ASPNETCORE_URLS=http://+:8001
+          - Database=DBFidelidade
+          - DbUser=SA
+          - Password=Suporte59@.!
+          - Datasource=host.docker.internal, 1433
+        ports:
+            - 8001:8001
+        mem_limit: 
+            512m
+        depends_on:
+            - mssql        
+        build:
+            context: .
+            dockerfile: FrwkBootCampFidelidade.Wallet.API\Dockerfile
+
+    bonification.api:
+        image: fernando2022/bonification.api  
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - DOCKER_ENVIRONMENT=true
+          - ASPNETCORE_URLS=http://+:8002
+          - Database=DBFidelidade
+          - DbUser=SA
+          - Password=Suporte59@.!
+          - Datasource=host.docker.internal, 1433
+        ports:
+            - 8002:8002
+        mem_limit: 
+            512m
+        depends_on:
+            - mssql    
+        build:
+            context: .
+            dockerfile: FrwkBootCampFidelidade.Bonification.API\Dockerfile    
+            
+    ransom.api:
+        image: fernando2022/ransom.api  
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - DOCKER_ENVIRONMENT=true
+          - ASPNETCORE_URLS=http://+:8003
+          - Database=DBFidelidade
+          - DbUser=SA
+          - Password=Suporte59@.!
+          - Datasource=host.docker.internal, 1433
+        ports:
+            - 8003:8003
+        mem_limit: 
+            512m
+        depends_on:
+            - mssql   
+        build:
+            context: .
+            dockerfile: FrwkBootCampFidelidade.Ransom.API\Dockerfile   
+            
+    extract.api:
+        image: fernando2022/extract.api  
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - DOCKER_ENVIRONMENT=true
+          - ASPNETCORE_URLS=http://+:8004
+          - Database=DBFidelidade
+          - DbUser=SA
+          - Password=Suporte59@.!
+          - Datasource=host.docker.internal, 1433
+        ports:
+            - 8004:8004
+        mem_limit: 
+            512m
+        depends_on:
+            - mssql
+        build:
+            context: .
+            dockerfile: FrwkBootCampFidelidade.Extract.API\Dockerfile
+
+    promotion.api:
+        image: fernando2022/promotion.api  
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - DOCKER_ENVIRONMENT=true
+            - ASPNETCORE_URLS=http://+:8005
+            - MongoDbDatabase=promotionsdb
+            - MongoDbDatasource=mongodb://host.docker.internal:27017
+        ports:
+            - 8005:8005
+        mem_limit: 
+            512m
+        depends_on:
+            - mongodb
+        build:
+            context: .
+            dockerfile: FrwkBootCampFidelidade.Promotion.API\Dockerfile
+
+    order.api:
+        image: fernando2022/order.api  
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - DOCKER_ENVIRONMENT=true
+          - ASPNETCORE_URLS=http://+:8004
+          - Database=DBFidelidade
+          - DbUser=SA
+          - Password=Suporte59@.!
+          - Datasource=host.docker.internal, 1433
+        ports:
+            - 8006:8006
+        mem_limit: 
+            512m
+        depends_on:
+            - mssql
+        build:
+            context: .
+            dockerfile: FrwkBootCampFidelidade.Order.API\Dockerfile
+    
+    zookeeper:
+      image: confluentinc/cp-zookeeper:latest
+      networks: 
+        - net
+      environment:
+        ZOOKEEPER_CLIENT_PORT: 2181
+        ZOOKEEPER_TICK_TIME: 2000
+
+    kafka:
+      image: confluentinc/cp-kafka:latest
+      container_name: kafka
+      networks: 
+        - net
+      depends_on:
+        - zookeeper
+      ports:
+        - 9092:9092
+      environment:
+        KAFKA_BROKER_ID: 1
+        KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+        KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+        KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+        KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+        KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+    kafdrop:
+      image: obsidiandynamics/kafdrop:latest
+      networks: 
+        - net
+      depends_on:
+        - kafka
+      ports:
+        - 19000:9000
+      environment:
+        KAFKA_BROKERCONNECT: kafka:29092
+
+networks: 
+  net:
+    driver: bridge

@@ -1,0 +1,17 @@
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.deps.json
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/ref/FrwkBootCampFidelidade.Aplicacao.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.pdb
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/FrwkBootCampFidelidade.Dominio.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/FrwkBootCampFidelidade.DTO.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/FrwkBootCampFidelidade.Dominio.pdb
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/bin/Debug/net5.0/FrwkBootCampFidelidade.DTO.pdb
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.csproj.AssemblyReference.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.AssemblyInfoInputs.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.AssemblyInfo.cs
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.csproj.CoreCompileInputs.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.csproj.CopyComplete
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/ref/FrwkBootCampFidelidade.Aplicacao.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/Debug/net5.0/FrwkBootCampFidelidade.Aplicacao.pdb

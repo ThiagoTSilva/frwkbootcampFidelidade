@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Base\Entities\**" />
+    <Compile Remove="Extrato\**" />
+    <Compile Remove="Resgate\**" />
+    <EmbeddedResource Remove="Base\Entities\**" />
+    <EmbeddedResource Remove="Extrato\**" />
+    <EmbeddedResource Remove="Resgate\**" />
+    <None Remove="Base\Entities\**" />
+    <None Remove="Extrato\**" />
+    <None Remove="Resgate\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="MongoDB.Driver" Version="2.14.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FrwkBootCampFidelidade.DTO\FrwkBootCampFidelidade.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

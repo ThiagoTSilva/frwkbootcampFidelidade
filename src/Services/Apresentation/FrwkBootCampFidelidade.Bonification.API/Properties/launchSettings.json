@@ -1,0 +1,54 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:43377",
+      "sslPort": 44364
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Datasource": "host.docker.internal, 1433",
+        "Database": "DBFidelidade",
+        "DbUser": "SA",
+        "Password": "Suporte59@.!",
+        "SecretKey": "1130f66f-591f-4f1c-a748-f1f9a1c7c43a",
+        "HOST": "host.docker.internal"
+
+      }
+    },
+    "FrwkBootCampFidelidade.Bonification.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "HOST": "host.docker.internal",
+        "Database": "DBFidelidade",
+        "DbUser": "SA",
+        "Password": "Suporte59@.!",
+        "Datasource": "host.docker.internal, 1433"
+
+      }
+    }
+  }
+}

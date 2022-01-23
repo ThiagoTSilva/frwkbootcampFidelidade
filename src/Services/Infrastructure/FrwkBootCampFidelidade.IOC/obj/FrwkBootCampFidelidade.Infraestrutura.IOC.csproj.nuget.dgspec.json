@@ -1,0 +1,373 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.IOC/FrwkBootCampFidelidade.Infraestrutura.IOC.csproj": {}
+  },
+  "projects": {
+    "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/FrwkBootCampFidelidade.Aplicacao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/FrwkBootCampFidelidade.Aplicacao.csproj",
+        "projectName": "FrwkBootCampFidelidade.Aplicacao",
+        "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/FrwkBootCampFidelidade.Aplicacao.csproj",
+        "packagesPath": "/Users/thiago/.nuget/packages/",
+        "outputPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiago/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/FrwkBootCampFidelidade.Dominio.csproj": {
+                "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/FrwkBootCampFidelidade.Dominio.csproj"
+              },
+              "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj": {
+                "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.8.2, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/FrwkBootCampFidelidade.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/FrwkBootCampFidelidade.Dominio.csproj",
+        "projectName": "FrwkBootCampFidelidade.Dominio",
+        "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/FrwkBootCampFidelidade.Dominio.csproj",
+        "packagesPath": "/Users/thiago/.nuget/packages/",
+        "outputPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiago/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj": {
+                "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj",
+        "projectName": "FrwkBootCampFidelidade.DTO",
+        "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj",
+        "packagesPath": "/Users/thiago/.nuget/packages/",
+        "outputPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiago/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Infraestrutura/FrwkBootCampFidelidade.Infraestrutura.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Infraestrutura/FrwkBootCampFidelidade.Infraestrutura.Data.csproj",
+        "projectName": "FrwkBootCampFidelidade.Infraestrutura.Data",
+        "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Infraestrutura/FrwkBootCampFidelidade.Infraestrutura.Data.csproj",
+        "packagesPath": "/Users/thiago/.nuget/packages/",
+        "outputPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Infraestrutura/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiago/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/FrwkBootCampFidelidade.Dominio.csproj": {
+                "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Dominio/FrwkBootCampFidelidade.Dominio.csproj"
+              },
+              "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj": {
+                "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/FrwkBootCampFidelidade.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.IOC/FrwkBootCampFidelidade.Infraestrutura.IOC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.IOC/FrwkBootCampFidelidade.Infraestrutura.IOC.csproj",
+        "projectName": "FrwkBootCampFidelidade.Infraestrutura.IOC",
+        "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.IOC/FrwkBootCampFidelidade.Infraestrutura.IOC.csproj",
+        "packagesPath": "/Users/thiago/.nuget/packages/",
+        "outputPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.IOC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/thiago/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/FrwkBootCampFidelidade.Aplicacao.csproj": {
+                "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Aplicacao/FrwkBootCampFidelidade.Aplicacao.csproj"
+              },
+              "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Infraestrutura/FrwkBootCampFidelidade.Infraestrutura.Data.csproj": {
+                "projectPath": "/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.Infraestrutura/FrwkBootCampFidelidade.Infraestrutura.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/bin/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.deps.json
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/bin/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/bin/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.pdb
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.csproj.AssemblyReference.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.AssemblyInfoInputs.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.AssemblyInfo.cs
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.csproj.CoreCompileInputs.cache
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.dll
+/Users/thiago/Projects/FrwmBootCampFidelidade/FrwkBootCampFidelidade.DTO/obj/Debug/netcoreapp3.1/FrwkBootCampFidelidade.DTO.pdb
